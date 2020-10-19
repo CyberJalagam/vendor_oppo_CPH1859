@@ -1807,6 +1807,15 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/CPH1859/proprietary/vendor/lib/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.commondcs@1.0.so \
     vendor/oppo/CPH1859/proprietary/vendor/lib/vendor.oppo.hardware.ktv@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.ktv@1.0.so \
     vendor/oppo/CPH1859/proprietary/vendor/lib/vendor.oppo.hardware.oiface@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.oiface@1.0.so \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/bt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/wlan_drv_gen3.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen3.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/fmradio_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/kneuron.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kneuron.ko \
+    vendor/oppo/CPH1859/proprietary/vendor/lib/modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
     vendor/oppo/CPH1859/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/oppo/CPH1859/proprietary/vendor/lib64/hw/android.hardware.audio@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@4.0-impl-mediatek.so \
     vendor/oppo/CPH1859/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
