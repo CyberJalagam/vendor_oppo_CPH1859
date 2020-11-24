@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/CPH1859/proprietary/etc/permissions/privapp-permissions-mediatek.xml:system/etc/permissions/privapp-permissions-mediatek.xml \
     vendor/oppo/CPH1859/proprietary/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar \
     vendor/oppo/CPH1859/proprietary/framework/mediatek-ims-legacy.jar:system/framework/mediatek-ims-legacy.jar \
+    vendor/oppo/CPH1859/proprietary/framework/mediatek-ims-wwop-common.jar:system/framework/mediatek-ims-wwop-common.jar \
     vendor/oppo/CPH1859/proprietary/lib/libcomutils.so:system/lib/libcomutils.so \
     vendor/oppo/CPH1859/proprietary/lib/libimsma.so:system/lib/libimsma.so \
     vendor/oppo/CPH1859/proprietary/lib/libimsma_adapt.so:system/lib/libimsma_adapt.so \
