@@ -43,8 +43,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/oppo/CPH1859/proprietary/etc/permissions/privapp-permissions-mediatek-engineer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek-engineer.xml
 
-# Prebuilts
+# IMS#
 PRODUCT_PACKAGES += \
-     ImsService \
-     EngineerMode \
-     HotwordEnrollmentOKGoogleCORTEXM4
+    ImsService
+ 
+# EngineerMode
+PRODUCT_PACKAGES += \
+    EngineerMode
