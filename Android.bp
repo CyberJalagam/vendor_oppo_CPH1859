@@ -19,6 +19,76 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+	name: "libem_support_jni",
+	owner: "oppo",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libem_support_jni.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libem_support_jni.so"],
+		},
+	},
+	compile_multilib: "both",
+    check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsysenv_system",
+	owner: "oppo",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libsysenv_system.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libsysenv_system.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	}
+
+cc_prebuilt_library_shared {
+	name: "libmtk-ril",
+	owner: "oppo",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libmtk-ril.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libshowlogo",
+	owner: "oppo",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libshowlogo.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+}
+
 android_app_import {
 	name: "HotwordEnrollmentOKGoogleCORTEXM4",
 	owner: "oppo",

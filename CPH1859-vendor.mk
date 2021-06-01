@@ -17,34 +17,14 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/CPH1859
 
-# Blobs
-PRODUCT_COPY_FILES += \
-    vendor/oppo/CPH1859/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
-    vendor/oppo/CPH1859/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
-    vendor/oppo/CPH1859/proprietary/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
-    vendor/oppo/CPH1859/proprietary/lib/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsysenv_system.so \
-    vendor/oppo/CPH1859/proprietary/lib/libshowlogo.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libshowlogo.so \
-    vendor/oppo/CPH1859/proprietary/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk-ril.so \
-    vendor/oppo/CPH1859/proprietary/lib64/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_support_jni.so \
-    vendor/oppo/CPH1859/proprietary/lib64/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsysenv_system.so \
-    vendor/oppo/CPH1859/proprietary/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_cap.so \
-    vendor/oppo/CPH1859/proprietary/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_capenc.so \
-    vendor/oppo/CPH1859/proprietary/lib/libavcodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libshowlogo.so \
-    vendor/oppo/CPH1859/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
-    vendor/oppo/CPH1859/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
-    vendor/oppo/CPH1859/proprietary/lib64/libavcodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libavcodec.so \
-    vendor/oppo/CPH1859/proprietary/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/oppo/CPH1859/proprietary/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
-    vendor/oppo/CPH1859/proprietary/lib64/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsysenv_system.so \
-    vendor/oppo/CPH1859/proprietary/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/oppo/CPH1859/proprietary/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so 
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    vendor/oppo/CPH1859/proprietary/etc/permissions/privapp-permissions-mediatek-engineer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek-engineer.xml
-
 # Prebuilts
 PRODUCT_PACKAGES += \
      ImsService \
-     EngineerMode \
      HotwordEnrollmentOKGoogleCORTEXM4
+
+# Libs
+PRODUCT_PACKAGES += \
+     libem_support_jni \
+     libsysenv_system \
+     libmtk-ril \
+     libshowlogo
